@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { FaArrowUpLong } from 'react-icons/fa6';
 import { SiLeetcode } from 'react-icons/si';
 
