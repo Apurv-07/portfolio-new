@@ -1,5 +1,3 @@
-import React from 'react'
-
 const ProjectCard = ({name, stack, about}: {name: string, stack: string[], about: string}) => {
     return (
         <div className="bg-gray-900 text-green-400 font-mono p-4 rounded-lg w-[300px] shadow shadow-white min-h-[400px]">

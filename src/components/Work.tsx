@@ -1,9 +1,9 @@
-import React, { forwardRef } from 'react'
+import { forwardRef } from 'react'
 import ProjectCard from '../common/ProjectCard'
 import { projects } from '../constants.ts/const'
 import { FaArrowDownLong } from 'react-icons/fa6'
 
-const Work = forwardRef<HTMLDivElement>((props, ref) => {
+const Work = forwardRef<HTMLDivElement>((_props, ref) => {
     return (
         <div className='max-w-[1000px] mx-auto my-20'>
             <h1 className='text-[32px] max-md:mx-[100px] font-medium text-white mt-10 flex gap-2 items-center'>Featured recent work <FaArrowDownLong /></h1>

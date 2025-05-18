@@ -1,7 +1,7 @@
-import React, { forwardRef, useState, type ChangeEvent, type FormEvent } from 'react';
+import { forwardRef, useState, type ChangeEvent, type FormEvent } from 'react';
 import { toast } from 'react-toastify';
 
-const Contact = forwardRef<HTMLDivElement>((props, ref) => {
+const Contact = forwardRef<HTMLDivElement>((_props, ref) => {
     const [form, setForm] = useState({
         name: '',
         email: '',

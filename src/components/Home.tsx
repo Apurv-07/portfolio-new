@@ -1,6 +1,6 @@
-import React, { forwardRef } from 'react'
+import { forwardRef } from 'react'
 
-const Home = forwardRef<HTMLDivElement>((props, ref) => {
+const Home = forwardRef<HTMLDivElement>((_props, ref) => {
     return (
         <div ref={ref} className='flex flex-col items-center justify-center my-10 gap-10 z-10 px-5 md:flex-row'>
             <div className="flex flex-col">

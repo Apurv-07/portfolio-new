@@ -1,7 +1,7 @@
-import React, { forwardRef } from 'react'
+import { forwardRef } from 'react'
 import { skills } from '../constants.ts/const'
 
-const About = forwardRef<HTMLDivElement>((props, ref) => {
+const About = forwardRef<HTMLDivElement>((_props, ref) => {
   return (
     <div ref={ref} className='max-w-[1200px] mx-auto p-10'>
         <h1 className='text-[32px] font-medium text-white'>About me</h1>
