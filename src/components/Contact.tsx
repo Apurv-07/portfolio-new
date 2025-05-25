@@ -1,7 +1,8 @@
-import { forwardRef, useState, type ChangeEvent, type FormEvent } from 'react';
+import { forwardRef, useState, type ChangeEvent, type FormEvent, type ForwardedRef } from 'react';
 import { toast } from 'react-toastify';
+import type { HomeProps } from './Home';
 
-const Contact = forwardRef<HTMLDivElement>((_props, ref) => {
+const Contact = forwardRef<HTMLDivElement, HomeProps>(({ scrollPos }, ref: ForwardedRef<HTMLDivElement>) => {
     const [form, setForm] = useState({
         name: '',
         email: '',
@@ -51,7 +52,7 @@ const Contact = forwardRef<HTMLDivElement>((_props, ref) => {
     return (
         <div ref={ref} className="py-12 bg-[url('coffee.jpeg')] bg-cover bg-center">
             <div className="mt-5 flex justify-center">
-                <form className="flex flex-col gap-5 max-w-[600px] bg-[rgba(255,255,255,0.3)] rounded-lg p-10" onSubmit={handleSubmit}>
+                <form className={`flex flex-col gap-5 max-w-[600px] bg-[rgba(255,255,255,0.3)] rounded-lg p-10 ${scrollPos>5100 && "animate-[appearFromBottom_1s_ease-in-out]"} ${scrollPos>2740 && "md:animate-[appearFromTop_1s_ease-in-out]"}`} onSubmit={handleSubmit}>
                     <h1 className="text-2xl font-semibold mb-4 text-white">Connect with Me</h1>
 
                     <div className="flex justify-between items-center">
