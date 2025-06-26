@@ -26,16 +26,16 @@ function App() {
 }
 
 const HomeWrapper = () => {
-  const { homeRef, scrollPos } = useContext(allContext)!;
-  return <Home ref={homeRef} scrollPos={scrollPos} />;
+  const { homeRef } = useContext(allContext)!;
+  return <Home ref={homeRef} />;
 };
 const ContactWrapper = () => {
   const { contactRef, scrollPos } = useContext(allContext)!;
   return <Contact ref={contactRef} scrollPos={scrollPos} />;
 };
 const AboutWrapper = () => {
-  const { aboutRef, scrollPos } = useContext(allContext)!;
-  return <About ref={aboutRef} scrollPos={scrollPos}/>;
+  const { aboutRef } = useContext(allContext)!;
+  return <About ref={aboutRef}/>;
 };
 const WorkWrapper = () => {
   const { workRef } = useContext(allContext)!;
