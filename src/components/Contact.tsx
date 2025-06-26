@@ -95,7 +95,7 @@ const Contact = forwardRef<HTMLDivElement, { scrollPos: number }>(
                             <h1 className="text-2xl font-semibold mb-6 text-white text-center">Connect with Me</h1>
 
                             <form className="flex flex-col gap-6" onSubmit={handleSubmit}>
-                                {['name', 'email', 'message'].map((field, idx) => (
+                                {['name', 'email', 'message'].map((field) => (
                                     <div key={field} className="relative group">
                                         <input
                                             id={field}

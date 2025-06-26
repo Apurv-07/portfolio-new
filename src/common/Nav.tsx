@@ -29,7 +29,7 @@ const Nav = () => {
 
                 {/* Desktop Nav */}
                 <div className="hidden md:flex items-center gap-10 pr-6 font-mono text-[20px] tracking-widest">
-                    {['Home', 'Work', 'Contact', 'About'].map((section, idx) => (
+                    {['Home', 'Work', 'Contact', 'About'].map((section) => (
                         <a
                             key={section}
                             onClick={() => scrollToSection(getAllRefs[`${section.toLowerCase()}Ref` as keyof typeof getAllRefs] as React.RefObject<HTMLDivElement>)}
